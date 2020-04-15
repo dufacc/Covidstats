@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+  .wrap {
+    max-width: 70em;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+.lt-grid-container {
+  display: grid;
+  grid-template-columns: 2.6fr 1.2fr;
+  grid-template-rows: 0.5fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "lt-mapChart lt-pieChart"
+                       "lt-mapChart lt-list"
+                       "lt-mapChart lt-list";
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(222,222,222,0.5); 
+}
+
+input{
+    border-radius: 10px;
+    border-color: #3b3b3b;
+    background-color: #3b3b3b;
+    color: #aaaaaa;
+    text-align: -webkit-center;
+}
+
+.lt-grid-container > div {
+
+  }
+
+.lt-mapChart { grid-area: lt-mapChart; }
+
+.lt-KPI { grid-area: lt-KPI; }
+
+.lt-list { grid-area: lt-list; }
+
+.lt-pieChart { grid-area: lt-pieChart; background-color: #3b3b3b;}
+
+.lt-areaChart { grid-area: lt-areaChart; }
+
+  .box{
+      border-radius: 4px;
+      padding-left: 6px; 
+      padding-right: 6px; 
+  }
+
+
+  td {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

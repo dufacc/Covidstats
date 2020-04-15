@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+
+
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/maps.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/material.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="deps/DataTables/DataTables-1.10.20/css/dataTables.foundation.min.css">
+
+  <!-- DataTables -->
+  <script type="text/javascript" src="deps/DataTables/datatables.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="deps/DataTables/datatables.min.css"/>
+
+  <script src="https://www.amcharts.com/lib/4/themes/dark.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/covid.css">
+  <link rel="stylesheet" type="text/css" href="css/dark.css">
+
+</head>
+
+<body>
+
+    <div class="lt-grid-container">
+        <div id="map" class="lt-mapChart box">mapChart</div>
+        <div id="list">
+            <table id="areas" class="compact hover order-column row-border lt-list">
+              <thead>
+                <tr>
+                  <th>Country/State</th>
+                  <th>Confirmed</th>
+                  <th>Deaths</th>
+                  <th>Recovered</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        <div id="pieChart" class="lt-pieChart box">mapChart</div>
+    </div>
+
+
+    <script defer src="js/covd.js"></script>
+    <script defer src="data/timelineworld.js"></script>
+    <script defer src="data/timelinetotalPC.js"></script>
+    <script defer src="deps/countries2.js"></script>
+    <script defer src="data/total.js"></script>
+    <script defer src="deps/var.js"></script>
+    <script defer src="js/pie.js"></script>
+    <script defer src="js/map.js"></script>
+
+    <script defer src="data/timelinetota.js"></script>
+    
+</body>
+</html>

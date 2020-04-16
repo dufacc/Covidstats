@@ -5,7 +5,7 @@ am4core.useTheme(am4themes_dark);
 
 let root = document.documentElement;
 
-var covid_total_timeline;
+//var covid_total_timeline;
 var globalCountry = "World";
 var populations = {
     "World": "7577130400",
@@ -284,8 +284,8 @@ var populations = {
   var currentCountry = "World";
 
   // last date of the data
-  //var lastDate = new Date(covid_total_timeline[covid_total_timeline.length - 1].date);
-  //var currentDate = lastDate;
+  var lastDate = new Date(covid_total_timeline[covid_total_timeline.length - 1].date);
+  var currentDate = lastDate;
 
   var currentPolygon;
 
